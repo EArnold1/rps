@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>RPS</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="jQuery/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
   <link rel="stylesheet" href="w3/W3.css">
@@ -15,10 +18,24 @@
 </head>
 
 <body class="bg-dark text-white">
-  <div class="container text-center mb-5">
-    <div class="start">
+  <div class="container mb-5 py-5">
+    <button class="btn btn-primary text-left" type="button" data-toggle="modal" data-target="#myModal">connect wallet</button>
+    <div class="modal text-dark" id="myModal">
+      <div class="modal-dialog bg-light py-5">
+        <div class="modal-content py-2">
+          <div>
+            <div class=" row px-5">
+              <img src="/everscale.png" alt="everscale_logo" class="col-6" height="70px" />
+              <h3 class="col-6 my-auto ">EverWallet</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="start text-center">
       <p class="text-danger start mt-3 w3-xxlarge mb-0"><i class="fa fa-play play" aria-hidden="true"></i></p>
-      <p class="tab"></p>
+      <p class="tab">
+      </p>
       <p class="text-success mt-0 blink">tap to play</p>
       <div class="container t instruction w3-display-middle w3-card">
         <p class="w3-text-sand w3-xlarge"><i class="fa fa-question-circle-o" aria-hidden="true"></i> It is a <span class="text-white">ROCK PAPER SCISSORS</span> game. To start the game tap the play <i aria-hidden="true" class="fa fa-play text-danger"></i> button above <i class="fa fa-level-up" aria-hidden="true"></i>. You know the rules, Enjoy.</p>
@@ -35,10 +52,10 @@
         </div>
       </div>
       <!--  <div class="container-fluid">-->
-      <div class="container container-fluid">
-        <p class="float-left btn btn-dark mr-2" id="rock"><i class="fa fa-hand-rock-o display-4"></i></p>
-        <p class=" btn btn-dark mr-2" id="paper"><i class="fa fa-hand-paper-o display-4"></i></p>
-        <p class="float-right btn btn-dark mr-2" id="scissors"><i class="fa fa-hand-scissors-o display-4"></i></p>
+      <div class="container container-fluid row">
+        <p class="col-4 btn btn-dark" id="rock"><i class="fa fa-hand-rock-o display-4"></i></p>
+        <p class="col-4 btn btn-dark" id="paper"><i class="fa fa-hand-paper-o display-4"></i></p>
+        <p class="col-4 btn btn-dark" id="scissors"><i class="fa fa-hand-scissors-o display-4"></i></p>
       </div>
       <!-- </div>-->
     </div>
